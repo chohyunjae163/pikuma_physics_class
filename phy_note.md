@@ -27,3 +27,19 @@ v= a*dt = v0+at
 integrate the velocity to find the position
 p= v*dt = p=p0+v0t+at^2/2
 euler integration
+
+### Numerical Integration
+
+#### Euler Integration
+only 100% accurate when the rate of change is constant over time
+
+#### Implicit Euler
+requires solving a system of equations per time-step
+
+#### Veelet Integration
+better accuracy than Implicit Euler
+less memory usage when simulating a large number of particles.
+
+#### Runge-Kutta Integration
+RK4: very accurate.
+accumulates error is on the order of the fourth derivative.
