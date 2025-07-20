@@ -36,7 +36,7 @@ only 100% accurate when the rate of change is constant over time
 #### Implicit Euler
 requires solving a system of equations per time-step
 
-#### Veelet Integration
+#### Verlet Integration
 better accuracy than Implicit Euler
 less memory usage when simulating a large number of particles.
 
