@@ -43,3 +43,7 @@ less memory usage when simulating a large number of particles.
 #### Runge-Kutta Integration
 RK4: very accurate.
 accumulates error is on the order of the fourth derivative.
+
+## Drag Force
+Drag is a resistive force acting in the opposite direction of the relative\
+motion of any object moving with respect to a surrounding fluid.
