@@ -49,3 +49,6 @@ Drag is a resistive force acting in the opposite direction of the relative\
 motion of any object moving with respect to a surrounding fluid.\
 The drag force depends on velocity.\
 Fd = 1/2 * p * Kd * A * ||v||^2 * -v
+p : fluid density
+Kd : Coefficient of drag
+A : Cross-sectional Area
