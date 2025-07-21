@@ -1,6 +1,5 @@
 #include "Application.h"
-#include "Physics/Constants.h"
-
+#include "./Physics/Constants.h"
 
 bool Application::IsRunning() {
     return running;
@@ -11,13 +10,12 @@ bool Application::IsRunning() {
 ///////////////////////////////////////////////////////////////////////////////
 void Application::Setup() {
     running = Graphics::OpenWindow();
-
-    // TODO: setup objects in the scene
+    
     particle = new Particle(50, 100, 1.0);
+    particle->radius = 4;
 }
 
-////////////////////////////////////////
-///////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
 // Input processing
 ///////////////////////////////////////////////////////////////////////////////
 void Application::Input() {
@@ -39,24 +37,42 @@ void Application::Input() {
 // Update function (called several times per second to update objects)
 ///////////////////////////////////////////////////////////////////////////////
 void Application::Update() {
+    // Wait some time until the reach the target frame time in milliseconds
+    static int timePreviousFrame;
+    int timeToWait = MILLISECS_PER_FRAME - (SDL_GetTicks() - timePreviousFrame);
+    if (timeToWait > 0)
+        SDL_Delay(timeToWait);
 
-	static int timePreviousFrame = 0;
-    float deltaTime = (SDL_GetTicks() - timePreviousFrame) / 1000.f;
-    //TODO: 
-    //check if we are too fast, and if so, slow down the simulation
-    //until we reach the MILLISECS_PER_FRAME
-	int timeToWait = MILLISECS_PER_FRAME - (SDL_GetTicks() - timePreviousFrame);
-    if (timeToWait > 0) {
-		SDL_Delay(timeToWait);
-    }
+    // Calculate the deltatime in seconds
+    float deltaTime = (SDL_GetTicks() - timePreviousFrame) / 1000.0f;
+    if (deltaTime > 0.016)
+        deltaTime = 0.016;
 
+    // Set the time of the current frame to be used in the next one
     timePreviousFrame = SDL_GetTicks();
-    // TODO: update all objects in the scene
 
-	particle->velocity = Vec2(50.0 * deltaTime, 0.0 * deltaTime);
-	particle->position += particle->velocity; // Update position based on velocity
+    // Apply a "wind" force to my particle
+    Vec2 wind = Vec2(0.2 * PIXELS_PER_METER, 0.0);
+    particle->AddForce(wind);
 
+    // Integrate the acceleration and velocity to estimate the new position
+    particle->Integrate(deltaTime);
 
+    // Nasty hardcoded flip in velocity if it touches the limits of the screen window
+    if (particle->position.x - particle->radius <= 0) {
+        particle->position.x = particle->radius;
+        particle->velocity.x *= -0.9;
+    } else if (particle->position.x + particle->radius >= Graphics::Width()) {
+        particle->position.x = Graphics::Width() - particle->radius;
+        particle->velocity.x *= -0.9;
+    }
+    if (particle->position.y - particle->radius <= 0) {
+        particle->position.y = particle->radius;
+        particle->velocity.y *= -0.9;
+    } else if (particle->position.y + particle->radius >= Graphics::Height()) {
+        particle->position.y = Graphics::Height() - particle->radius;
+        particle->velocity.y *= -0.9;
+    }
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -64,7 +80,7 @@ void Application::Update() {
 ///////////////////////////////////////////////////////////////////////////////
 void Application::Render() {
     Graphics::ClearScreen(0xFF056263);
-    Graphics::DrawFillCircle(particle->position.x,particle->position.y, 4, 0xFFFFFFFF);
+    Graphics::DrawFillCircle(particle->position.x, particle->position.y, particle->radius, 0xFFFFFFFF);
     Graphics::RenderFrame();
 }
 
@@ -72,8 +88,6 @@ void Application::Render() {
 // Destroy function to delete objects and close the window
 ///////////////////////////////////////////////////////////////////////////////
 void Application::Destroy() {
-    // TODO: destroy all objects in the scene
     delete particle;
-
     Graphics::CloseWindow();
 }
