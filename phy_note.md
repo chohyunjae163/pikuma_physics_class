@@ -47,3 +47,4 @@ accumulates error is on the order of the fourth derivative.
 ## Drag Force
 Drag is a resistive force acting in the opposite direction of the relative\
 motion of any object moving with respect to a surrounding fluid.
+The drag force depends on velocity.
