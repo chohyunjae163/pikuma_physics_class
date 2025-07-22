@@ -63,7 +63,7 @@ Ff = u * ||Fn|| * -v
 u = Coefficient of friction  
 Fn = normal force
 
-# Gravitational Attraction
+## Gravitational Attraction
 An object falling is just "our" experience of gravity  
 As the earth pulls an object towrards it due to a gravtitational force, the object pulls the earth as well  
 Every object with mass exerts a gravitational force on every other object  
