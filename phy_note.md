@@ -72,7 +72,7 @@ Fg = G * (Ma * Mb) / ||d||^2 * d
 ## Spring Force
 The force of the spring is proportional to the displacement of the spring  
 Fs= -K * dl  
-k= spring constant  
+k= spring constant. how stiff?    
 dl= delta length. spring displacement
 
 
