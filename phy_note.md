@@ -52,3 +52,13 @@ Fd = 1/2 * p * Kd * A * ||v||^2 * -v
 p : fluid density  
 Kd : Coefficient of drag  
 A : Cross-sectional Area  
+
+## Friction Force
+Friction is a contact force that resists sliding between surfaces  
+**Kinetic friction** is the friction force when an object is sliding along a surface  
+Direction is opposite the object's sliding direction and is parallel to the contact surface  
+**Static friction** is the friction force that prevents an object from sliding along a surface  
+Direction stops the object from sliding against another surface and is parallel to the contact surface  
+Ff = u * ||Fn|| * -v  
+
+
