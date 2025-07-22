@@ -60,5 +60,6 @@ Direction is opposite the object's sliding direction and is parallel to the cont
 **Static friction** is the friction force that prevents an object from sliding along a surface  
 Direction stops the object from sliding against another surface and is parallel to the contact surface  
 Ff = u * ||Fn|| * -v  
-
+u = Coefficient of friction
+Fn = normal force
 
