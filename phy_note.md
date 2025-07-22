@@ -21,12 +21,12 @@ the acceleration by differentiating the velocity at a certain time t.\
 a= dv/dt. the derivative of velocity is acceleration
 
 ### Integration
-acceleration is constant. how do we get velocity?
-integrate the acceleration to find the velocity
-v= a*dt = v0+at
-integrate the velocity to find the position
-p= v*dt = p=p0+v0t+at^2/2
-euler integration
+acceleration is constant. how do we get velocity?  
+integrate the acceleration to find the velocity  
+v= a*dt = v0+at  
+integrate the velocity to find the position  
+p= v*dt = p=p0+v0t+at^2/2  
+
 
 ### Numerical Integration
 
