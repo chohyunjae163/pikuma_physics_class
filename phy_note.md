@@ -77,6 +77,12 @@ dl= delta length. spring displacement
 
 ## Rigid Bodies
 Different than particles, rigid bodies have shape, rotation, and center of mass.  
+The formulas for displacement, velocity, acceleration, and forces  
+discussed in the previous sections apply as well for rigid bodies.    
+three main shape classes:  
+1. circles
+2. polygons
+3. boxes
 
 
 
