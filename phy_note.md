@@ -75,7 +75,8 @@ Fs= -K * dl
 k= spring constant. how stiff?    
 dl= delta length. spring displacement
 
-
+## Rigid Bodies
+Different than particles, rigid bodies have shape, rotation, and center of mass.  
 
 
 
