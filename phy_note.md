@@ -84,6 +84,11 @@ three main shape classes:
 2. polygons
 3. boxes
 
+## Angular Motion
 
-
-
+### Angular Velocity
+As the body rotates, theta will change. the rate at which theta changes is called "angular velocty", w.  
+w = theta/t  
+### Angular Acceleration
+As the body rotates, the rate at which w changesr is called angular acceleration  
+a= w/t  
