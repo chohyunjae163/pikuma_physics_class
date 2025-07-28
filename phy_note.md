@@ -114,6 +114,6 @@ resists to change its angular acceleration
 Moment of inertia is inversely proprotional to the angular acceleration  
 - the bigger the moment of inertia, the smaller is the angular acceleration  
 
-Different values of moment of inertia for different shapes
+Different values of moment of inertia for different shapes  
 Solid Circle : I = (r^2)/2 * m  
 Solid Rectangle: I = (w^2 + h^2) /12 * m  
