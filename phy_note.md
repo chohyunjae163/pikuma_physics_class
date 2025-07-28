@@ -92,3 +92,5 @@ w = theta/t
 ### Angular Acceleration
 As the body rotates, the rate at which w changesr is called angular acceleration  
 a= w/t  
+
+how do we go about initiating rotational motion? how do we change angular acceleration?  
