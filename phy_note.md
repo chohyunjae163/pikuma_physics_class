@@ -94,3 +94,26 @@ As the body rotates, the rate at which w changesr is called angular acceleration
 a= w/t  
 
 how do we go about initiating rotational motion? how do we change angular acceleration?  
+
+### Torque
+we can initiate a rotational by applying "torque".  
+the ability of a force to rotate an object around an axis  
+Ft = F * d * sin(b)  
+Ft = Torque Force  
+d = Distance from the center to the point  
+
+Torque is the object's Moment of Inertia multiplied by its Angular acceleration  
+t = l * a  
+a = t / I  
+Torque is analogous to force and moment of inertia is analogus to mass  
+F == t  
+m == I  
+### Moment of inertia
+Moment of Inertia is analogous to mass, and measures how much an object  
+resists to change its angular acceleration  
+Moment of inertia is inversely proprotional to the angular acceleration  
+- the bigger the moment of inertia, the smaller is the angular acceleration
+different values of moment of inertia for different shapes
+
+Solid Circle : I = (r^2)/2 * m  
+Solid Rectangle: I = (w^2 + h^2) /12 * m  
