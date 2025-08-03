@@ -117,3 +117,8 @@ Moment of inertia is inversely proprotional to the angular acceleration
 Different values of moment of inertia for different shapes  
 Solid Circle : I = (r^2)/2 * m  
 Solid Rectangle: I = (w^2 + h^2) /12 * m  
+
+
+## Circle Collision
+if the distance between bodies a and b is less than the sum of the two radii, we have a collision!  
+
