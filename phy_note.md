@@ -119,6 +119,6 @@ Solid Circle : I = (r^2)/2 * m
 Solid Rectangle: I = (w^2 + h^2) /12 * m  
 
 
-## Circle Collision
+## Circle-Circle Collision
 if the distance between bodies a and b is less than the sum of the two radii, we have a collision!  
 
