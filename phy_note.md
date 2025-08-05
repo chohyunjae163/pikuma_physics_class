@@ -122,3 +122,10 @@ Solid Rectangle: I = (w^2 + h^2) /12 * m
 ## Circle-Circle Collision
 if the distance between bodies a and b is less than the sum of the two radii, we have a collision!  
 
+### Broad Phase
+Check bodies that are probably colliding, using a faster algorithm ( for example, bounding circle, or bounding rectangle )  
+output: list of bodies that ar eprobably colliding
+
+### Narrow Phase 
+check if objects are indeed colliding  
+
