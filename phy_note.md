@@ -90,7 +90,7 @@ three main shape classes:
 As the body rotates, theta will change. the rate at which theta changes is called "angular velocty", w.  
 w = theta/t  
 ### Angular Acceleration
-As the body rotates, the rate at which w changesr is called angular acceleration  
+As the body rotates, the rate at which w changes is called angular acceleration  
 a= w/t  
 
 how do we go about initiating rotational motion? how do we change angular acceleration?  
