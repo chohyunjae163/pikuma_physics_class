@@ -130,3 +130,5 @@ output: list of bodies that ar eprobably colliding
 only continue testing the bodies that pass the broad phase test  
 check if objects are indeed colliding  
 
+It's all about culling objects that are not close.
+
