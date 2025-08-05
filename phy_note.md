@@ -127,5 +127,6 @@ Check bodies that are probably colliding, using a faster algorithm ( for example
 output: list of bodies that ar eprobably colliding
 
 ### Narrow Phase 
+only continue testing the bodies that pass the broad phase test  
 check if objects are indeed colliding  
 
