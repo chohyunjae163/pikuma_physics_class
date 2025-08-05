@@ -132,3 +132,14 @@ check if objects are indeed colliding
 
 It's all about culling objects that are not close.
 
+
+### Resolving Collision
+- the collision normal is the direction in which the potential impulse should be applied.
+- the penetration depth will determine how big of an impulse we need to use.
+
+#### Projection Method
+Adjust the position of the colliding objects.
+#### Impulse Method
+Adjust the velocity of the colliding objects by applying impulses
+#### Penalty Method
+Adjust the acceleration of the colliding objects
