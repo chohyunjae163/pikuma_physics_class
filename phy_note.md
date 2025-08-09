@@ -148,7 +148,10 @@ Achieved through the application of an impulse to both objects, which can be tho
 momentum between the objects in a system
 #### Momentum
 Momentum is a measurement of **mass** in motion  
-a tendenct to stay in motion
+a tendenct to stay in motion  
+conservation of momentum: the total momentum of a system should alwats be constant. As objects collide, they impart some of their momentum on the other object,
+reducing their own.  
+
 P = m * v  
 
 #### Penalty Method
