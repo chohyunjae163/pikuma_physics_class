@@ -145,7 +145,9 @@ Adjust the velocity of the colliding objects by applying impulses
 The impulse method allows us to directly change the **velocities** of the bidoes that just collided  
 The velocity changes are instant, they take new values, and the duration of the frame does not affect the result.  
 Achieved through the application of an impulse to both objects, which can be thought of as an immediate transfer of  
-momentum between the objects in a system
+momentum between the objects in a system  
+Impul is a change in momentum by performing a direct change in velocity.
+Fdt = dP = mv1 - mv  
 #### Momentum
 Momentum is a measurement of **mass** in motion  
 a tendenct to stay in motion  
