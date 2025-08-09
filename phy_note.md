@@ -141,6 +141,7 @@ It's all about culling objects that are not close.
 Adjust the position of the colliding objects.  
 changing their positions in opposite directions along the collision normal. 
 #### Impulse Method
-Adjust the velocity of the colliding objects by applying impulses
+Adjust the velocity of the colliding objects by applying impulses  
+The impulse method allows us to directly change the **velocities** of the bidoes that just collided
 #### Penalty Method
 Adjust the acceleration of the colliding objects
