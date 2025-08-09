@@ -161,7 +161,10 @@ Fdt = dP = mv1 - mv
 if we apply a force on an object for some time, that object will gain some momentum
 Impulse is force applied on an object for some time.  
 J = MdV  
-Impulse is just a change in velocity
+Impulse is just a change in velocity  
+Elastic Collision (e=1.0)  
+Inelastic Collision (e=0.0)  
+
 
 #### Penalty Method
 Adjust the acceleration of the colliding objects
