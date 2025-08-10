@@ -165,6 +165,11 @@ Impulse is just a change in velocity
 Elastic Collision (e=1.0)  
 Inelastic Collision (e=0.0)  
 
-
 #### Penalty Method
 Adjust the acceleration of the colliding objects
+
+## AABB
+the collision detection algorithm for AABBs is relatively cheap and fast  
+therefore, AABBs are very common shapes for broad-phase test  
+you'll find many games that wrap other complex shapes inside AABBs.  
+
