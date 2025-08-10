@@ -178,12 +178,15 @@ then we can guarantee that these bodies are not colliding!
 ## Separating Axis Theorem (SAT)
 if there is at least one axis that separates that both shapes, then we can safely say that these bodies are not colliding  
 The SAT is one of the most popular collision detection algorithms for rigid bodies  (together with the GJK algorithm)  .
-The SAT onlt works for convex polygons.
-
+The SAT onlt works for convex polygons.  
+the SAT will detect box-box collision.  
 ### CONVEX POLYGON
-
+- has all of its internal angles less than 180 degree
 ### CONCAVE POLYGON
+- has at least one of its interal angles greater than 180 degree
 
+#### GJK Algorithm
+- works for both shapes, convex and concave polygons.
 
 
 ### OBB
