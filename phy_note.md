@@ -172,4 +172,15 @@ Adjust the acceleration of the colliding objects
 the collision detection algorithm for AABBs is relatively cheap and fast  
 therefore, AABBs are very common shapes for broad-phase test  
 you'll find many games that wrap other complex shapes inside AABBs.  
+if we find at least one axis where there is a gap separating the two rigid bodies,  
+then we can guarantee that these bodies are not colliding!
+
+## Separating Axis Theorem (SAT)
+if there is at least one axis that separates that both shapes, then we can safely say that these bodies are not colliding  
+The SAT is one of the most popular collision detection algorithms for rigid bodies  (together with the GJK algorithm)  .
+
+### OBB
+Oriented Bounding boxes are boxes that are rotated  
+the algorithm we will learn to detect collision between OBBs will also  
+work for any other convex polygon  
 
